@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mis XV — Danna Joselin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <header class="hero">
+        <h1 class="title">Mis XV — <span class="name">Danna Joselin</span></h1>
+        <p class="subtitle">Un día muy especial. ¿Nos acompañas?</p>
+      </header>
+
+      <section id="step-welcome" class="step">
+        <button id="startBtn" class="btn primary">Confirmar asistencia</button>
+      </section>
+
+      <section id="step-attend" class="step hidden">
+        <p class="question">¿Podrás acompañarme en este día tan especial?</p>
+        <div class="row">
+          <button id="yesBtn" class="btn pink">Sí 💕</button>
+          <button id="noBtn" class="btn muted">No 😢</button>
+        </div>
+      </section>
+
+      <section id="step-family" class="step hidden">
+        <p>Selecciona tu familia:</p>
+        <select id="familySelect" class="select">
+          <option value="">Cargando familias...</option>
+        </select>
+
+        <div id="qrContainer" class="qr-container"></div>
+
+        <div class="row mt">
+          <input id="visitorName" placeholder="Tu nombre (opcional)" class="input" />
+          <button id="confirmBtn" class="btn confirm">Confirmar</button>
+        </div>
+      </section>
+
+      <section id="step-thanks" class="step hidden">
+        <div class="thanks">
+          <h2>¡Gracias por confirmar! 💖</h2>
+          <p>Nos vemos en la fiesta — Danna</p>
+        </div>
+      </section>
+
+      <footer class="credit">✨ Diseño: romántico elegante • QR válidos en puerta</footer>
+    </div>
+  </main>
+
+  <script>
+    // Ajusta esta URL a tu Web App de Google Apps Script (pega la URL que obtuviste al desplegar)
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbwdYnUvdkPvo13FG1PIrRu04FoQ1cd7l4UI1kMm03QXpgZHpdjbMQz-xby8cMXvLeux9w/exec';
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
